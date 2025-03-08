@@ -1,6 +1,6 @@
 # Employee CRUD API
 
-This is a simple Employee CRUD (Create, Read, Update, Delete) REST API built using Python and Flask, with SQLite as the database.
+A simple Employee CRUD (Create, Read, Update, Delete) REST API built using Python and Flask, with SQLite as the database. This API allows you to manage employee records, including creating new employees, retrieving employee details, updating existing employee information, and deleting employees.
 
 ## Features
 
@@ -21,8 +21,8 @@ This is a simple Employee CRUD (Create, Read, Update, Delete) REST API built usi
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/EmpCRUD.git
-   cd EmpCRUD
+   git clone https://github.com/msnonari/Employee-REST-API.git
+   cd Employee-REST-API
    ```
 
 2. Create a virtual environment and activate it:
