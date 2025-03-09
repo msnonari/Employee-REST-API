@@ -95,6 +95,54 @@ curl -X PUT http://127.0.0.1:5000/emp/1 -H "Content-Type: application/json" -d '
 curl -X DELETE http://127.0.0.1:5000/emp/1
 ```
 
+## Creating the SQLite Database and Importing the Schema
+
+To create the SQLite database and import the schema, follow these steps:
+
+1. Open a terminal and navigate to the project directory:
+
+   ```sh
+   cd path/to/Employee-REST-API
+   ```
+
+2. Open the SQLite command line interface:
+
+   ```sh
+   sqlite3 EmpData.db
+   ```
+
+3. Import the `schema.sql` file to create the `Employee` table and insert records:
+
+   ```sh
+   .read schema.sql
+   ```
+
+4. Verify that the `Employee` table has been created and records have been inserted:
+
+   ```sh
+   .tables
+   SELECT * FROM Employee;
+   ```
+
+This will create the `Employee` table and insert the initial records as defined in the `schema.sql` file.
+
 ## License
 
 This project is licensed under the MIT License.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or improvements, feel free to open an issue or submit a pull request.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+Please make sure to update tests as appropriate.
+
+---
+
+Thank you for your interest in contributing to this project!
